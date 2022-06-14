@@ -12,7 +12,7 @@ ssize_t writecount = 0;
 
 if (isatty(STDIN_FILENO) == 1)
 {
-writecount = write(STDOUT_FILENO, prompt, 2);
+writecount = write(STDOUT_FILENO, prompt, 10);
 if (writecount == -1)
 exit(0);
 }
