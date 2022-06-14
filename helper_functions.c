@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _getenv - gets PATH member from environ
- * @name: pointer to PATH string
+ * _getenv - gets PATH environment variable
+ * @name: name of environment variable
  *
- * Return: pointer to PATH member string or NULL if not found
+ * Return: pointer to environment variable
  */
 char *_getenv(const char *name)
 {
@@ -21,7 +21,7 @@ return (environ[i]);
 return (NULL);
 }
 /**
- * _env - prints the environ
+ * _env - prints environment variables
  *
  * Return: 0 on success
  */
@@ -49,7 +49,7 @@ _putchar('\n');
  * _putchar - prints a character
  * @c: character to print
  *
- * Return: return value of write syscall
+ * Return: return value of write
  */
 int _putchar(char c)
 {

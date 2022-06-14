@@ -7,7 +7,7 @@
  */
 int prompt(void)
 {
-char *prompt = "$ ";
+char *prompt = "#cishard$ ";
 ssize_t writecount = 0;
 
 if (isatty(STDIN_FILENO) == 1)
